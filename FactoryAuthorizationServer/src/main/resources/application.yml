@@ -1,0 +1,64 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Factory
+    username: postgres
+    password: Welcome@123
+    platform: postgresql
+    
+## Config ##
+config:
+  oauth2:
+    clientid: amitkumar
+    clientSecret: amitkumar@5786
+    privateKey: -----BEGIN RSA PRIVATE KEY-----
+      MIIEpQIBAAKCAQEAwl2DZsVblddGxv18Rn2BDQp2BIqNtzoelyNy/hBvMQM0XGzx
+      /8R6yYz3KIu461L8OwrCFRib3KDHLBdH6Z4o9XDRf9xJzWhW7nZ7jYxLt+czBbRB
+      fYCUFP1Weq4fA6wFu4+/ylW1uXmijuM54SIPABcxVNG7cE3IHhDmln+1h/Tnn15j
+      t4iMrtyAN70pTFny0YWlk/J+MrxMrAR9MxdAQ9gjzTaykcxov1OqFwbIGTWOW2aQ
+      PZ1aWrkQ1ZhbtoEavaxfYVX2BFqCMTnzFvzcHNOhTl/wxH7bDZgxlzURny7lMIeY
+      BE5wJwQP9Q5CqfHWsJkRRghnrWsvk2OnPnN32wIDAQABAoIBAQCntlU6CrX6V6Xk
+      8rmXgZgnjo1DYeLi5a2bsKT7AWdQnXlC/2bZ0co5u/9Q5y+LLzIiKChMV8211K3I
+      J9aPiT/CebTsZULxkUThwy7ddt+nMkJee6m/B4G/ktJaTYDJhFf1/hX6G3cRMhnI
+      vd0lnGPhKiIRFGBuiU9SUjcGSfBz/KUJ2PWcRZ611tw1FstVcpHH3O/bwEGlUrjr
+      q6bvYc8ESUAZm1oyEJy2a47UkLvGMYlNj6mbq7Ge6NBwJQJhWg4bGHAfFQyyYXOJ
+      EckKmbMNS6VzpEOGWvi0WyfN9M+/K9VizFiG3PBoWEWFBVsNF+LlH0NYenKt2fJU
+      SIbXitwxAoGBAP056QwAwLFh5AQXtSIYFut9h6RvAxn8xgurLMFjW/9mBIu0eluQ
+      q1vYlGaRs7t/Oge8hJWX8n8MCIauaWCoefe6MLg4ruwec4fVdtQlGy1DqmHbZAQZ
+      1ENFrTQE1c7i+WAG+enndON5DiY7B7/kpODHV4OkN9+gSvmcxQ13B8StAoGBAMR+
+      i/0tmVVEx133eWidRRG6psoHpSbj8M+3+6zN7SXXD+HtddsanL3iDAIfqOWoBO0W
+      jaLq401WxdZkU8YD5QGCQ0cUo1PaaYJIZh5M3smNihzNj5kRonCGr1n9QpREFVcH
+      l+VhqYDr9XhPrIhRmJ2Fpywomfeae2kGyTZkxTenAoGBAIliNdHRRrn2BiNCSX9p
+      2mWBAWpw4BnlTf1erTVulqcFzkmNbSToZE+8PSc4vW5oJC+2U6hle6b5/FY1oe5S
+      +XkxhuUru5tXGg8D/SgzyX7RS0s0IBspeEPXNZUXWniYI/u5TTVd4cjYEJklRZsS
+      jXF2NUCyg63L5WFvcGlRvuExAoGBAIsozF/cAXIAKeoEsDlE2Hu74w/F5lLqr8uM
+      k3NIzCE2dIsfL46jBEr+Yl7GqUkse4Clrl2pWJ2XTLmPiDz+2Rr+dENM/HcQghTA
+      zYG8EzRPR3cqpf5UHOTwnhNvZ821gh+Gwy6ywecKNWillJ1enGVDGKgPgSt4ftpc
+      8ffR2lKVAoGABp79qZqX9eTqhgCJ0x9jUf9Z+kpw0I2Y1pGm94J3cXgpYOnMtB/I
+      hn2q0Yp4UnoCLIueoAgqGxU0LZ9KCPedlyj3wvEcYkYqfGojEKo6mriy2zE/MDL8
+      1FRcOT8HUoU2Lk9ayHaW7D2kO28Acx3DhgapJza7jQxbs+mLXRxcaeU=
+      -----END RSA PRIVATE KEY-----
+    publicKey: -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwl2DZsVblddGxv18Rn2B
+      DQp2BIqNtzoelyNy/hBvMQM0XGzx/8R6yYz3KIu461L8OwrCFRib3KDHLBdH6Z4o
+      9XDRf9xJzWhW7nZ7jYxLt+czBbRBfYCUFP1Weq4fA6wFu4+/ylW1uXmijuM54SIP
+      ABcxVNG7cE3IHhDmln+1h/Tnn15jt4iMrtyAN70pTFny0YWlk/J+MrxMrAR9MxdA
+      Q9gjzTaykcxov1OqFwbIGTWOW2aQPZ1aWrkQ1ZhbtoEavaxfYVX2BFqCMTnzFvzc
+      HNOhTl/wxH7bDZgxlzURny7lMIeYBE5wJwQP9Q5CqfHWsJkRRghnrWsvk2OnPnN3
+      2wIDAQAB
+      -----END PUBLIC KEY-----
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+      lease:
+        duration: 5
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 2

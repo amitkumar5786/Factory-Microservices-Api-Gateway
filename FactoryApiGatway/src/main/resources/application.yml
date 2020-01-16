@@ -1,0 +1,29 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /FactoryApiGateway
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Factory
+    username: postgres
+    password: Welcome@123
+    platform: postgresql
+    
+## Config ##
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwl2DZsVblddGxv18Rn2B
+          DQp2BIqNtzoelyNy/hBvMQM0XGzx/8R6yYz3KIu461L8OwrCFRib3KDHLBdH6Z4o
+          9XDRf9xJzWhW7nZ7jYxLt+czBbRBfYCUFP1Weq4fA6wFu4+/ylW1uXmijuM54SIP
+          ABcxVNG7cE3IHhDmln+1h/Tnn15jt4iMrtyAN70pTFny0YWlk/J+MrxMrAR9MxdA
+          Q9gjzTaykcxov1OqFwbIGTWOW2aQPZ1aWrkQ1ZhbtoEavaxfYVX2BFqCMTnzFvzc
+          HNOhTl/wxH7bDZgxlzURny7lMIeYBE5wJwQP9Q5CqfHWsJkRRghnrWsvk2OnPnN3
+          2wIDAQAB
+          -----END PUBLIC KEY-----
+          
+
