@@ -1,0 +1,13 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /FactoryInsertDetails
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Factory
+    username: postgres
+    password: Welcome@123
+    platform: postgresql
+    
