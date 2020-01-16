@@ -1,0 +1,13 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /FactoryViewDetails
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Factory
+    username: postgres
+    password: Welcome@123
+    platform: postgresql
+    
